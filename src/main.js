@@ -1,6 +1,6 @@
 // 1. add multiple strings and number
 // ex: time is 10:30 pm
-// print 100 random numbers
+// print 100 random intergers
 // between 0 to 10
 // if Number is less than 5 store in array "minors" otherwise "major"
 
@@ -14,14 +14,24 @@ console.log("---------------1 done-----------------");
 
 const minor = [];
 const major = [];
-// if Random-number is <5 print minr number; else major number
-
 // i++ = (i = i+1)
-let random 
 for (let i = 0; i < 100; i++) {
-  console.log(Math.random() * 10);
+  let random = Math.round(Math.random() * 10);
+  if (random < 5) {
+    minor.push(random);
+  } else {
+    major.push(random);
+  }
+
+  //   /**
+  //    * TODO: change if-else into ternery operator
+  //    */
+
+  //   console.log(random < 5 ? "minor : " : "major : ", random);
 }
 
-// if (<5){
-//     console.log(minor)
-// }
+console.log("All minors b/w 100 is ", minor);
+console.log("All majors b/w 100 is ", major);
+
+
+
