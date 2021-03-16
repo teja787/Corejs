@@ -1,21 +1,38 @@
-const sampleArr = new Array(10);
-const sampleobj = {};
-for (let index = 0; index < sampleArr.length; index++) {
-  sampleArr[index] = Math.round(Math.random() * 20);
-  sampleobj[index] = Math.round(Math.random() * 20);
-}
+const isloading = true;
+const isdownloading = false;
 
-console.log(sampleArr);
-console.log(sampleobj);
+// console.log(!isdownloading);
 
-//forof loop is used to return arrayitems
-for (const item of sampleArr) {
-  console.log(item);
-}
-// forif loop used to return objectkey
-for (const key in sampleobj) {
-  if (Object.hasOwnProperty.call(sampleobj, key)) {
-    const element = sampleobj[key];
-    console.log(key, element);
-  }
-}
+// if (isloading && !isdownloading) {
+//   console.log("abc");
+// }
+
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean("errer"));
+console.log(Boolean({}));
+console.log(Boolean([]));
+console.log(Boolean(true));
+console.log(!!"true");
+console.log(!"true");
+console.log(!{});
+console.log(Boolean());
+console.log(Boolean(NaN)); //what is NaN ?
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+
+// whats is difference b/w `==` and `===`
+const tempArr = [2];
+console.log([2] == [2]);
+console.log([2] === [2]);
+
+// const name = ()=>{
+//     const firstname = ['teja','ravi','ramu']
+//     const lastname = ['m','t','s']
+//     switch{
+//         case a:
+//             console.log(firstname.in)
+//     }
+// }
