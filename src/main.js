@@ -49,3 +49,25 @@ function mouseOver(id) {
 function mouseOut(id) {
   document.getElementById(id).style.color = "white";
 }
+// setTimeout(() => {
+//   const listContainer = document.querySelector("#listContainer");
+//   for (let i = 0; i <= 100; i++) {
+//     const li = document.createElement("li");
+//     const txtNode = document.createTextNode(i + 1);
+//     li.appendChild(txtNode);
+//     listContainer.appendChild(li);
+//     console.log(i);
+//   }
+// }, 0);
+
+function popUp() {
+  const popupContainer = document.querySelector("#popupContainer");
+  popupContainer.style.display = "flex";
+  //   setTimeout(() => {
+  //     popupContainer.style.display = "none";
+  //   }, 1000);
+}
+function popUpClose() {
+  const popupContainer = document.querySelector("#popupContainer");
+  popupContainer.style.display = "none";
+}
