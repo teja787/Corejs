@@ -1,38 +1,51 @@
-const isloading = true;
-const isdownloading = false;
+const head1 = document.querySelector("#head1");
+console.log(head1);
+head1.style.listStyleType = "none";
+head1.style.margin = 0;
+head1.style.padding = 0;
+head1.style.overflow = "hidden";
+head1.style.backgroundColor = "#333";
 
-// console.log(!isdownloading);
+const list1 = document.querySelector("#list1");
+console.log(list1);
+list1.style.float = "left";
 
-// if (isloading && !isdownloading) {
-//   console.log("abc");
-// }
+const list2 = document.querySelector("#list2");
+list2.style.float = "left";
+list2.style.display = "block";
+list2.style.color = "white";
+list2.style.textAlign = "center";
+list2.style.padding = "25px";
+list2.style.textDecoration = "none";
 
-console.log(Boolean(true));
-console.log(Boolean(false));
-console.log(Boolean(0));
-console.log(Boolean(""));
-console.log(Boolean("errer"));
-console.log(Boolean({}));
-console.log(Boolean([]));
-console.log(Boolean(true));
-console.log(!!"true");
-console.log(!"true");
-console.log(!{});
-console.log(Boolean());
-console.log(Boolean(NaN)); //what is NaN ?
-console.log(Boolean(null));
-console.log(Boolean(undefined));
+const list3 = document.querySelector("#list3");
+list3.style.float = "left";
+list3.style.display = "block";
+list3.style.color = "white";
+list3.style.textAlign = "center";
+list3.style.padding = "25px";
+list3.style.textDecoration = "none";
 
-// whats is difference b/w `==` and `===`
-const tempArr = [2];
-console.log([2] == [2]);
-console.log([2] === [2]);
+const list4 = document.querySelector("#list4");
+list4.style.float = "left";
+list4.style.display = "block";
+list4.style.color = "white";
+list4.style.textAlign = "left";
+list4.style.padding = "25px";
+list4.style.textDecoration = "none";
 
-// const name = ()=>{
-//     const firstname = ['teja','ravi','ramu']
-//     const lastname = ['m','t','s']
-//     switch{
-//         case a:
-//             console.log(firstname.in)
-//     }
-// }
+const list5 = document.querySelector("#list5");
+list5.style.float = "left";
+list5.style.display = "block";
+list5.style.color = "white";
+list5.style.textAlign = "center";
+list5.style.padding = "25px";
+list5.style.textDecoration = "none";
+
+function mouseOver(id) {
+  document.getElementById(id).style.color = "green";
+}
+
+function mouseOut(id) {
+  document.getElementById(id).style.color = "white";
+}
