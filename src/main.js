@@ -71,3 +71,24 @@ function popUpClose() {
   const popupContainer = document.querySelector("#popupContainer");
   popupContainer.style.display = "none";
 }
+
+function openNav() {
+  document.getElementById("sideNav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0";
+}
+
+function getConfirmation() {
+  var modal = confirm("Do you want to continue ?");
+  const logger = document.querySelector("#logger");
+  logger.innerHTML = "";
+  const div = document.createElement("div");
+  const txtNode = document.createTextNode(
+    modal == true ? "user want to continue" : "user do not want to continue"
+  );
+  div.appendChild(txtNode);
+  logger.appendChild(div);
+}
