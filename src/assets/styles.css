@@ -56,3 +56,39 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  .grid-box{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    background-color: lightgreen;
+  }
+
+  aside{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: calc(100vh - 120px);
+    background-color: mediumseagreen;
+  }
+  header{
+    background-color: mistyrose;
+  }
+  footer{
+    background-color: lightskyblue;
+  }
+  header, footer{
+    grid-column-start:1 ;
+    grid-column-end: -1;
+    height: 60px;
+  }
+
+  body{
+    padding: 0px;
+    margin: 0px;
+  }
+  main{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    background-color: mediumslateblue;
+  }
