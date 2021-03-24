@@ -1,9 +1,14 @@
-const dia = document.querySelector("#dialogBtn");
-// 1. create dialog
-// 2. create onclick function to open dialog
-// 3.
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("dialogBtn");
+var span = document.getElementById("close");
 
-const content = document.createElement("div");
-/**
- * TODO: implement this
- */
+btn.onclick = function (e) {
+  e.stopPropagation();
+  modal.style.display = "block";
+};
+
+const closeDialog = function (e) {
+  e.stopPropagation();
+  modal.style.display = "none";
+};
+document.onclick = closeDialog;
