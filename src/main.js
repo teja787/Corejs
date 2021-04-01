@@ -1,14 +1,12 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("dialogBtn");
-var span = document.getElementById("close");
+// 1.  Boolean in js
+// 2.  if else and switch statements
+// 3.  lopps (forLoop, forEach, forin, forof)
 
-btn.onclick = function (e) {
-  e.stopPropagation();
-  modal.style.display = "block";
-};
+// 1. 0 is false and other true
 
-const closeDialog = function (e) {
-  e.stopPropagation();
-  modal.style.display = "none";
-};
-document.onclick = closeDialog;
+function isJohn(name) {
+  if (name === "john") return true;
+  else return false;
+}
+
+console.log(isJohn("john"));
